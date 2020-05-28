@@ -1,2 +1,2 @@
-# kube-garbage-collector
-kube-garbage-collector is another kind of garbage collector for kubernetes resources. 
+## kube-garbage-collector 
+In kubernetes,There are so many kinds of objects (Deployment,Job,Pod and CRDs) being created day and night☀️🌛.But some time.We might miss to delete them in time due to the swelling head🤕. When the objects meta size increase to the limit of etcd database size(2Gi),Your cluster would be confined to one's bed with a serious illness😷🛏.So we create this project to do garbage collection with some rules you specified such as succeeded jobs collection,compeleted pods collection,namespace stucking in delection after timeout and so on.
